@@ -28,3 +28,7 @@ Leaflet for maps
 MockAPI / JSON Server for backend
 
 CSS Modules for styling
+
+## Live Demo
+
+Check out the live version [here](https://travelboxd-travel-tracker-app.vercel.app/)

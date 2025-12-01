@@ -9,13 +9,13 @@ export default function Product() {
       <section>
         <div>
           <h2>
-            Simple pricing.
+            Expect More. Pay Less.
             <br />
-            Just $9/month.
+            Just $5/month.
           </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel labore mollitia iusto. Recusandae quos
-            provident, laboriosam fugit voluptatem iste.
+            At just $5, giving you full access to all its travel tracking features. For a small one-time investment, you
+            can log your trips, map your journeys, and create a personal travel diary that grows with every adventure.
           </p>
         </div>
         <img src='img-2.jpg' alt='overview of a large city with skyscrapers' />

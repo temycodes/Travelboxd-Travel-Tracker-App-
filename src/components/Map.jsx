@@ -7,6 +7,20 @@ import { useGeolocation } from "../Hooks/useGeolocate";
 import Button from "./Button";
 import { useUrlPosition } from "../Hooks/useUrlPosition";
 import { useNavigate } from "react-router-dom";
+import L from "leaflet";
+
+// Import Leaflet marker images
+import iconUrl from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
+
+const defaultIcon = L.icon({
+  iconUrl,
+  shadowUrl: iconShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
 
 function Map() {
   const { cities } = useCities();
@@ -29,7 +43,7 @@ function Map() {
     <div className={styles.mapContainer}>
       {!geolocatePosition && (
         <Button type='position' onClick={getPosition}>
-          {isLoadingPosition ? "Loading" : "Pin your Location"}
+          {isLoadingPosition ? "Loading..." : "Pin your Location"}
         </Button>
       )}
       <MapContainer center={mapPosition} zoom={13} scrollWheelZoom={true} className={styles.map}>
@@ -39,9 +53,9 @@ function Map() {
         />
         {cities.map((city) =>
           city.position?.lat && city.position?.lng ? (
-            <Marker position={[city.position.lat, city.position.lng]} key={city.id}>
+            <Marker position={[city.position.lat, city.position.lng]} key={city.id} icon={defaultIcon}>
               <Popup>
-                <span>{city.cityName}</span>
+                <span>{city.emoji}</span> <span>{city.cityName}</span>
               </Popup>
             </Marker>
           ) : null

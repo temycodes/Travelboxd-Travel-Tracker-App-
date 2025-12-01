@@ -10,13 +10,14 @@ export default function Product() {
         <div>
           <h2>About travelboxd.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est dicta illum vero culpa cum quaerat
-            architecto sapiente eius non soluta, molestiae nihil laborum, placeat debitis, laboriosam at fuga
-            perspiciatis?
+            Travelboxd is a sleek and intuitive travel tracker app designed to make exploring the world more organized
+            and memorable. It allows users to log trips, keep track and keep track of visited destinations.Travelboxd
+            turns every journey into a digital diary, helping travelers reflect on experiences and plan future
+            adventures effortlessly.
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus libero sunt expedita ratione
-            iusto, magni, id sapiente sequi officiis et.
+            Its user-friendly interface ensures that capturing memories and sharing travel stories is both simple and
+            enjoyable.
           </p>
         </div>
       </section>
